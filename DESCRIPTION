@@ -1,0 +1,17 @@
+Type: Compendium
+Package: Compendium title
+Title: Weight of apples is important for something
+Version: 0.0.1
+Authors@R: 
+    person(given = "Mathew",
+           family = "Marques",
+           role = c("aut", "cre"),
+           email = "m.marques@latrobe.edu.au",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This is the repo associated with my paper etc.
+License: MIT + file LICENSE
+Depends: 
+    ggplot2,
+    R.utils
+Encoding: UTF-8
+LazyData: true

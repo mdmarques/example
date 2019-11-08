@@ -17,15 +17,14 @@ R.utils::sourceDirectory('R/')
 apples$log_weight <- log(apples$weight)
 
 #graphing
-pdf('figs/hist_apple_weight.pdf')
-hist(apples$weight)
-hist(apples$weight)
-hist(apples$weight)
+library(ggplot2)
+#pdf('figs/hist_apple_weight.pdf')
 hist(apples$weight)
 dev.off()
 
 png('figs/hist_apple_weight.png')
-hist(apples$weight)
+ggplot2::ggplot(apples, aes(weight)) + geom_histogram()
+# hist(apples$weight)
 dev.off()
 
 
